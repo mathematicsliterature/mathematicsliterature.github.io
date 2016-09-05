@@ -1,5 +1,5 @@
 ---
-title: Lemmaitre, Hubble, Friedmann: Το μοντέλο της Μεγάλης Έκρηξης
+title: Lemmaitre, Hubble, Friedmann. Το μοντέλο της Μεγάλης Έκρηξης
 date: 2016-3-18
 school_year: 2015-2016
 book: Big Bang - Simon Singh
