@@ -11,6 +11,15 @@ document.getElementById('hero').style.display = 'block';
 mainsuperscroll("#test a");
 </script>
 
+<ul class="post-list">
+    {% for post in site.categories.start %}
+        <li>
+            {% include howtoshowapost.html %}  
+        </li>
+    {% endfor %}
+</ul>
+
+
 <h1>Εδώ θα μπεί το πρώτο κείμενο που γράψατε. (καλωσήρθατε κλπ)</h1>
 
 <p>
@@ -21,11 +30,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor condimen
 
 
 Απο κάτω θα εμφανίζονται όσες αναρτήσεις θέλετε να φαίνονται στην αρχική σελίδα.
-
-<ul class="post-list">
-    {% for post in site.categories.start %}
-        <li>
-            {% include howtoshowapost.html %}  
-        </li>
-    {% endfor %}
-</ul>
