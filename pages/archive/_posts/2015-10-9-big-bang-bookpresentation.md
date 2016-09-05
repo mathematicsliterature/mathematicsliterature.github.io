@@ -1,14 +1,12 @@
 ---
-layout: post
-title: "Ξ Ξ±ΟΞΏΟ…ΟƒΞ―Ξ±ΟƒΞ· Ο„ΞΏΟ… Ξ’ΞΉΞ²Ξ»Ξ―ΞΏΟ… Big Bang"
-date: 2015-10-9 
-book: Big Bang - Simon Singh
-image: "katerhs.jpg, meskos.jpg"
-announcement: "4-12-15.png"
-speakers: "Ξ Ξ±Ο€Ξ±Ξ΄ΟΟ€ΞΏΟ…Ξ»ΞΏΟ‚ ΞΟ‰Ξ½ΟƒΟ„Ξ±Ξ½Ο„Ξ―Ξ½ΞΏΟ‚ % Ξ£Ο€Ξ·Ξ»ΞΉΟΟ€ΞΏΟ…Ξ»ΞΏΟ‚ Ξ‘ΞΉΞΌΞ―Ξ»ΞΉΞΏΟ‚"
+title: Παρουσίαση του βιβλίου Big Bang
+date: 2015-10-9
 school_year: 2015-2016
+book: Big Bang - Simon Singh
+image: bigbangbookpresentation1.jpg , bigbangbookpresentation2.jpg
+speakers: Παπαδόπουλος Κωνσταντίνος % Σπηλιόπουλος Αιμίλιος
+announcement: 9-10-15.png
 ---
-a
 
 
 
