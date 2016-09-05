@@ -42,18 +42,8 @@
 	    {% endfor %}
           </ul>
         </li>
-		<li class="dropdown">
-          <a href="/hmerologio" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ημερολόγιο <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            {% for post in site.categories.archive %}
- 	      {% assign currentdate = post.school_year | remove: " " %}
- 	      {% if currentdate != date %}
- 	        <li><a href="/hmerologio/#{{currentdate}}">{{currentdate}}</a></li>  
-	        {% assign date = currentdate %} 
-	      {% endif %}
- 	    {% endfor %}
-          </ul>
-        </li>
+	
+	<li><a href="/hmerologio">Ημερολόγιο </a></li>
        
         <li><a href="/about">Σχετικά</a></li> 
  	  
