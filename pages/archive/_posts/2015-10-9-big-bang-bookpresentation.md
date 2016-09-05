@@ -1,10 +1,10 @@
 ---
-title: Παρουσίαση του βιβλίου Big Bang
+title: Ξ Ξ±ΟΞΏΟ…ΟƒΞ―Ξ±ΟƒΞ· Ο„ΞΏΟ… Ξ²ΞΉΞ²Ξ»Ξ―ΞΏΟ… Big Bang
 date: 2015-10-9
 school_year: 2015-2016
 book: Big Bang - Simon Singh
 image: bigbangbookpresentation1.jpg , bigbangbookpresentation2.jpg
-speakers: Παπαδόπουλος Κωνσταντίνος % Σπηλιόπουλος Αιμίλιος
+speakers: Ξ Ξ±Ο€Ξ±Ξ΄ΟΟ€ΞΏΟ…Ξ»ΞΏΟ‚ ΞΟ‰Ξ½ΟƒΟ„Ξ±Ξ½Ο„Ξ―Ξ½ΞΏΟ‚ % Ξ£Ο€Ξ·Ξ»ΞΉΟΟ€ΞΏΟ…Ξ»ΞΏΟ‚ Ξ‘ΞΉΞΌΞ―Ξ»ΞΉΞΏΟ‚
 announcement: 9-10-15.png
 ---
 
