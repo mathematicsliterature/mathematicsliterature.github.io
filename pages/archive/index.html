@@ -1,0 +1,23 @@
+---
+layout: page
+title: Αρχείο Διαλέξεων
+permalink: /archive/
+---
+
+<ul class="post-list">
+
+{% for post in site.categories.archive %}
+  {% assign currentdate = post.school_year | remove: " " %}
+  {% if currentdate != date %}
+    <br><div id="{{currentdate}}"> <h3>Αρχείο της σχολικής χρονιάς {{currentdate}}</h3></div>
+    {% assign date = currentdate %} 
+  {% endif %}
+    {% include howtoshowapost.html %}
+    {% unless forloop.last %}
+      <hr>
+    {% endunless %}
+{% endfor %}
+
+
+</ul>
+

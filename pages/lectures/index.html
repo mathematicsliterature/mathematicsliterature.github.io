@@ -1,0 +1,21 @@
+---
+layout: page
+title: Φετινές διαλέξεις
+permalink: "/lectures/"
+---
+
+<ul class="post-list">
+    {% for post in site.posts.lectures reversed %}
+        <li>
+            {% include howtoshowapost.html %}  
+        </li>
+        {% unless forloop.last %}
+            <hr>
+        {% endunless %}
+    {% endfor %}
+</ul>
+
+
+
+
+

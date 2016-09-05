@@ -1,0 +1,16 @@
+<a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h2>{{ post.title }}</h2></a>
+
+
+<p><span class="label label-primary"><span class="glyphicon glyphicon-user"></span> Γράφουν:</span>
+   {{ post.author | replace:'%', 'και' }}
+</p>
+
+
+{{post.content | truncatewords: 80}}
+
+
+<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+    <button type="button" class="btn btn-default">
+    Διαβάστε Περισσότερα <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </button>
+</a>

@@ -1,0 +1,20 @@
+
+<nav>
+  <ul class="pager">
+  
+    
+    {% if page.previous.url %}
+    <li class="previous"><a href="{{page.previous.url}}"><span aria-hidden="true">&larr;</span> Προηγούμενη χρονολογικά καταχώρηση</a></li>
+    {% else %}
+    <li class="previous disabled"><a href="{{page.previous.url}}"><span aria-hidden="true">&larr;</span> Προηγούμενη χρονολογικά καταχώρηση</a></li>
+    {% endif %}
+
+
+    {% if page.next.url %}
+    <li class="next"><a href="{{page.next.url}} ">Επόμενη χρονολογικά καταχώρηση <span aria-hidden="true">&rarr;</span></a></li>
+    {% else %}
+    <li class="next disabled"><a href="{{page.next.url}}">Επόμενη χρονολογικά καταχώρηση <span aria-hidden="true">&rarr;</span></a></li>
+    {% endif %}
+  </ul>
+</nav>
+

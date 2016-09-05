@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <h4 style="color: #828282;"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {% assign m = page.date | date: "%-m" %}
+        {{ page.date | date: "%-d" }}
+        {% case m %}
+          {% when '1' %}Ιανουαρίου
+          {% when '2' %}Φεβρουαρίου
+          {% when '3' %}Μαρτίου
+          {% when '4' %}Απριλίου
+          {% when '5' %}Μαΐου
+          {% when '6' %}Ιουνίου
+          {% when '7' %}Ιουλίου
+          {% when '8' %}Αυγούστου
+          {% when '9' %}Σεπτεμβρίου
+          {% when '10' %}Οκτωβρίου
+          {% when '11' %}Νοεμβρίου
+          {% when '12' %}Δεκεμβρίου
+        {% endcase %}
+{{ page.date | date: "%Y" }}
+      </time> 
+    </h4>
+    
+  </header>
+  
+  <div class="post-content" itemprop="articleBody">
+    <div class="row">
+      <div class=".col-xs-12 .col-sm-12 .col-lg-12">
+        {% assign foo= page.image|split: ','%}
+        {% assign b= foo|size %}
+        {% if b == 1 %}
+            <div class="panel panel-default">
+                <div class="panel-heading">Μία φωτογραφία από την διάλεξη:</div>
+                <div class="panel-body">
+                <img class="img-thumbnail" src=/files/images/{{foo}} >
+                </div>
+            </div> 
+        {% elsif b > 1 %}
+        <div class=".col-xs-12 .col-sm-12 .col-lg-12">
+          <div class="panel panel-default">
+                <div class="panel-heading">Φωτογραφίες από την διάλεξη:</div>
+                <div class="panel-body"> 
+                    {% include carousel.html array=foo %}
+                </div>
+           </div>
+      </div>
+      
+        {% endif %}
+
+      </div>
+      {% if page.announcement %}
+         <div class=".col-xs-12 .col-sm-12 .col-lg-12">
+          <div class="panel panel-default">
+                <div class="panel-heading">Η ανακοίνωση της διάλεξης:</div>
+                <div class="panel-body">
+                     <img src = /files/images/{{ page.announcement }} >
+                </div>
+           </div>
+      </div>
+      {% endif %}
+    </div> 
+
+    {{content}}
+
+  <div class="alert alert-info" role="alert">
+    <a href="/files/ppts/{{page.ppt}}" class="alert-link">Πατήστε εδώ για να κατεβάσετε την παρουσίαση</a>
+  </div>
+  
+  <div style="background-color: red;">
+    <h1>Σχόλια... </h1>
+    {% include comments.html %}  
+  </div>
+  {% include pager.html%} 
+
+</article>

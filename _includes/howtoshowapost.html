@@ -1,0 +1,42 @@
+<a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h2>{{ post.title }}</h2></a>
+
+<div class="row">
+    <div class="col-sm-4">
+      {% assign images = {{post.image}} | split: ',' %} 
+      <img class = "circular-img"  src = /files/images/{{ images | first }} height = 1000px >
+    </div>
+
+    <div class="col-sm-4">
+        <p><span class="label label-primary"><span class="glyphicon glyphicon-user"></span> Εισηγητές:</span>
+             {% assign names = {{post.speakers}} | split: '%' %}
+             <ul style="margin:0" class="list-group">
+                {% for name in names %}
+                   <li class="list-group-item">{{ name }}</li>
+                {% endfor %}
+             </ul
+        </p>
+    </div>
+
+    <div class="col-sm-4">
+        <p><span class="label label-primary"><span class="glyphicon glyphicon-calendar"></span> Ημερομηνία</span> {{post.date | date: "%d/%m/%Y" }}</p>
+        <p><span class="label label-warning"><span class="glyphicon glyphicon-book"></span> Βιβλίο</span> {{post.book}} </p>
+        
+        {% if post.ppt %}       
+        <a href="/files/ppts/{{post.ppt}}">
+             <button type="button" class="btn btn-default">
+             Κατεβάστε την Παρουσίαση  <span class="glyphicon glyphicon-download-alt"></span>
+             </button>
+        </a>
+        {% else %}
+        <button type="button" class="btn btn-default disabled">
+            Κατεβάστε την Παρουσίαση <span class="glyphicon glyphicon-download-alt"></span>
+        </button>
+        {% endif %}
+         
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+             <button type="button" class="btn btn-default">
+             Διαβάστε Περισσότερα <span class="glyphicon glyphicon-circle-arrow-right"></span>
+             </button>
+        </a>
+    </div>
+</div>

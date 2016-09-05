@@ -1,0 +1,70 @@
+<header class="site-header">
+
+    <div id="hero">
+      <div id="test" class="intro">
+        <a href="#navsection">
+        <h1>Όμιλος <br> "Μαθηματικά και Λογοτεχνία"</h1>
+        <h3>2ο Πειραματικό Γενικό Λύκειο Αθηνών</h3>
+        </a>
+      </div>
+    </div>
+    
+    <div class="wrapper-header">
+    <nav class="navbar navbar-default" id="navsection" >
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand active" href="/#navsection">Μαθηματικά και Λογοτεχνία</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/articles">Άρθρα</a></li>
+		<li><a href="/lectures">Διαλέξεις</a></li>
+        <li><a href="/events">Εκδηλώσεις</a></li>
+		<li class="dropdown">
+          <a href="/archive" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Αρχείο <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <!--<li role="separator" class="divider"></li>-->
+  	    {% for post in site.categories.archive %}
+	      {% assign currentdate = post.school_year | remove: " " %}
+	      {% if currentdate != date %}
+	        <li><a href="/archive/#{{currentdate}}">{{currentdate}}</a></li>  
+	        {% assign date = currentdate %} 
+	      {% endif %}
+	    {% endfor %}
+          </ul>
+        </li>
+		<li class="dropdown">
+          <a href="/hmerologio" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ημερολόγιο <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {% for post in site.categories.archive %}
+ 	      {% assign currentdate = post.school_year | remove: " " %}
+ 	      {% if currentdate != date %}
+ 	        <li><a href="/hmerologio/#{{currentdate}}">{{currentdate}}</a></li>  
+	        {% assign date = currentdate %} 
+	      {% endif %}
+ 	    {% endfor %}
+          </ul>
+        </li>
+       
+        <li><a href="/about">Σχετικά</a></li> 
+ 	  
+	  </ul>
+	  
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    </div>
+
+    
+  
+
+</header>

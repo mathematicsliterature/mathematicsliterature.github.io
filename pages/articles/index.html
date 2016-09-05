@@ -1,0 +1,16 @@
+---
+layout: page
+title: "Άρθρα"
+permalink: "/articles/"
+---
+
+<ul class="post-list">
+    {% for post in site.categories.articles %}
+        <li>
+            {% include howtoshowanarticle.html %}  
+        </li>
+    {% endfor %}
+</ul>
+
+
+
