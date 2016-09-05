@@ -1,6 +1,6 @@
 ---
 title: Γαλιλαίος
-date: 2015-2-5
+date: 2016-2-5
 school_year: 2015-2016
 book: Big Bang - Simon Singh
 image: galileo2015-1.jpg, galileo2015-2.jpg
