@@ -77,7 +77,7 @@ $on-laptop:        800px;
 
 #hero {
   display: none;
-  background: url("/files/images/omadikhimg2015-2016.jpg") no-repeat center center;
+  background: url("/files/images/madikhimg2015-2016.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh; 
 
@@ -98,4 +98,5 @@ $on-laptop:        800px;
   top: 50%;
   transform: translateY(-50%); 
   text-align: center;
-  color: white; }
+  color: white !important; 
+}
