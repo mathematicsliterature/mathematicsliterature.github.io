@@ -1,6 +1,6 @@
 # Site settings
 title: Όμιλος Μαθηματικών και Λογοτεχνίας, 2ο ΠΓΕΛ Αθηνών
-email: your-email@domain.com
+email: mathliteratureclub@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Όμιλος Μαθηματικών και Λογοτεχνίας του 2ου Πειραματικού Γενικού Λυεκίου Αθηνών
 baseurl: "" # the subpath of your site, e.g. /blog
