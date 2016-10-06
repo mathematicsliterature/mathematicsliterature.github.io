@@ -79,7 +79,7 @@ $on-laptop:        800px;
   display: none;
   background: url("/files/images/omadikhimg2015-2016.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh;
+  height: 100vh; 
 
   padding-right: 0px;
   padding-left: 0px;
@@ -92,22 +92,10 @@ $on-laptop:        800px;
     }
 }
 
-#hero:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.75;
-  background-size: 100% 100%;
-}
-
 #hero .intro {
   padding: 3rem;
   position: relative;
   top: 50%;
   transform: translateY(-50%); 
   text-align: center;
-  color: white !important; 
-}
+  color: white; }
