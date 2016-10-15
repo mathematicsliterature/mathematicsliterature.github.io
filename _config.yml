@@ -17,7 +17,7 @@ defaults:
   -
     scope:
       path: "pages/lectures"
-      type: "posts" # note that path: "_posts" instead of type: "posts" is for some reason not working
+      type: "posts" 
     values:
       layout: "post"
   -
