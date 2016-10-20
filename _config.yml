@@ -16,12 +16,6 @@ timezone: Europe/Athens
 defaults:
   -
     scope:
-      path: "pages/lectures"
-      type: "posts" 
-    values:
-      layout: "post"
-  -
-    scope:
       path: "pages/articles"
       type: "posts" 
     values:
