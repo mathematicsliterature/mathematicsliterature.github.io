@@ -1,9 +1,0 @@
----
-title: A.Einstein. Bασικές Αρχές Ειδική Σχετικότητα - Μετασχηματισμοί χρόνου/μήκους
-date: 2016-2-26
-school_year: 2015-2016
-book: Big Bang - Simon Singh
-image: einstein2015-1.jpg, einstein2015-2.jpg, einstein2015-3.jpg, einstein2015-4.jpg, einstein2015-5.jpg
-speakers: Aλεξόπουλος Κων/νος, Γ1 % Γκολφινόπουλος Κων/νος, A1 % Στεμπίλης Πάνος, Β6 % Στεμπίλης Νίκος, Β5 % Τσιλιμπάρης Κων/νος, Β6 
-announcement: 26-2-16.png 
----

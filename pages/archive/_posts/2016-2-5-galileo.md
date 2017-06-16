@@ -1,9 +1,0 @@
----
-title: Γαλιλαίος
-date: 2016-2-5
-school_year: 2015-2016
-book: Big Bang - Simon Singh
-image: galileo2015-1.jpg, galileo2015-2.jpg
-speakers: Μόζερ Λεωνίδας, Β3 % Μπιζμπίκη Κατερίνα, Β4
-announcement: 5-2-16.png
----

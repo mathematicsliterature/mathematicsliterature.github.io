@@ -1,40 +1,40 @@
-# Site settings
+---
 title: Όμιλος Μαθηματικών και Λογοτεχνίας, 2ο ΠΓΕΛ Αθηνών
-email: mathliteratureclub@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Όμιλος Μαθηματικών και Λογοτεχνίας του 2ου Πειραματικού Γενικού Λυεκίου Αθηνών
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://mathematicsliterature.github.io" # the base hostname & protocol for your site
-
-# Build settings
-markdown: kramdown
-
-# Other
-encoding: utf-8
 timezone: Europe/Athens
-
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
-  -
-    scope:
-      path: "pages/articles"
-      type: "posts" 
-    values:
-      layout: "article" 	  
-  -
-    scope:
-      path: "pages/archive"
-      type: "posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: "pages/events"
-      type: "posts" 
-    values:
-      layout: "archive"
-  -
-    scope:
-      path: "pages/lectures"
-      type: "posts"
-    values:
-      layout: "post"
+- scope:
+    path: pages/articles
+    type: posts
+  values:
+    layout: article
+- scope:
+    path: pages/archive
+    type: posts
+  values:
+    layout: post
+- scope:
+    path: pages/events
+    type: posts
+  values:
+    layout: archive
+- scope:
+    path: pages/lectures
+    type: posts
+  values:
+    layout: post
+email: mathliteratureclub@gmail.com
+description: 'Όμιλος Μαθηματικών και Λογοτεχνίας του 2ου Πειραματικού Γενικού Λυεκίου
+  Αθηνών
+
+'
+baseurl: ''
+url: https://mathematicsliterature.github.io
+markdown: kramdown
+encoding: utf-8
